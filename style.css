@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "adobe";
+  src: url(AdobeFangsongStd-Regular.otf);
+}
+@font-face {
+  font-family: "CMU";
+  src: url(CMU_Typewriter_Text_LightOblique.otf);
+}
+h1 {
+  color: #084177;
+  font-family: adobe;
+}
+
+h2 {
+  color: #687466;
+  font-family: CMU;
+}
+
+body {
+  background: conic-gradient(#fbc490, #e6ad77);
+}
+
+nav {
+  background: conic-gradient(#cd8d7b, #f0b09e);
+  position: fixed;
+  top: 3px;
+  left: 0;
+  font-size: 18pt;
+  height: 7%;
+  width: 100%;
+}
+nav .menu {
+  position: relative;
+  left: 32%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 4px;
+}
+nav .menu li {
+  display: inline;
+  padding-left: 70px;
+}
+nav a {
+  color: #084177;
+  text-decoration: none;
+  font-family: CMU;
+}
+nav a:hover {
+  background-color: #F2906B;
+  border-bottom: 3px solid;
+  text-decoration: overline;
+}
+
+#rate {
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  width: 500px;
+  border-radius: 50px;
+  opacity: 80%;
+}
+
+#first {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#second {
+  position: absolute;
+  bottom: 20%;
+  right: 9%;
+  background-color: #cd8d7b;
+  height: 45px;
+  width: 400px;
+  border-radius: 25px;
+}
+#second a {
+  color: #084177;
+  text-decoration: none;
+  font-family: CMU;
+  font-size: 24pt;
+  margin-left: 40px;
+}
+#second a:hover {
+  background-color: #F2906B;
+  border-bottom: 3px solid;
+  text-decoration: overline;
+}
+
+#main {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 450px;
+}
+
+table {
+  font-family: CMU;
+  font-size: 14px;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 0 0 0 10px #F2906B;
+  color: #452F21;
+  max-height: 70%;
+}
+
+th {
+  padding: 10px 8px;
+  background: white;
+}
+
+table th:first-child {
+  border-top-left-radius: 20px;
+}
+
+table th:last-child {
+  border-top-right-radius: 20px;
+}
+
+td {
+  border-top: 10px solid #F2906B;
+  padding: 8px;
+  background: white;
+}
+
+table td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+table td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 7%;
+  left: 20%;
+}
+#buttons button {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#cd8d7b), to(#f0b09e));
+  padding: 5px 10px;
+  color: #084177;
+  border-radius: 5px;
+  border: 1px solid #687466;
+  font-family: CMU;
+  font-size: 16pt;
+}
+
+/*# sourceMappingURL=style.css.map */

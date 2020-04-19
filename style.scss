@@ -1,0 +1,149 @@
+$main_c: #084177;
+$help_c: #687466;
+$need: #cd8d7b;
+$need1: #f0b09e;
+$back_color: #fbc490;
+$back_color1: #e6ad77;
+$a_c: #F2906B;
+@mixin lin(){
+  color: $main_c;
+  text-decoration: none;
+  font-family: CMU;
+}
+
+@mixin linover(){
+  background-color: $a_c;
+  border-bottom: 3px solid;
+  text-decoration: overline;
+}
+
+@font-face {
+  font-family: "adobe";
+  src: url(AdobeFangsongStd-Regular.otf)
+}
+@font-face {
+  font-family: "CMU";
+  src: url(CMU_Typewriter_Text_LightOblique.otf)
+}
+
+h1{
+  color: $main_c;
+  font-family: adobe;
+}
+h2{
+  color: $help_c;
+  font-family: CMU;
+}
+body{
+  background: conic-gradient($back_color, $back_color1);
+}
+nav{
+  background: conic-gradient($need, $need1);
+  position: fixed;
+  top: 3px;
+  left: 0;
+  font-size: 18pt;
+  height: 7%;
+  width: 100%;
+  .menu {
+    position: relative;
+    left: 32%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 4px;
+    li{
+      display: inline;
+      padding-left: 70px;
+    }
+  }
+  a{
+    @include lin();
+  }
+  a:hover{
+    @include linover();
+  }
+}
+#rate{
+  position: absolute;
+  right: 5%;
+  bottom: 40%;
+  width: 500px;
+  border-radius: 50px;
+  opacity: 80%;
+}
+#first{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+#second{
+  position: absolute;
+  bottom: 20%;
+  right: 9%;
+  background-color: $need;
+  height: 45px;
+  width: 400px;
+  border-radius: 25px;
+  a{
+    @include lin;
+    font-size: 24pt;
+    margin-left: 40px;
+  }
+  a:hover{
+    @include linover();
+  }
+}
+#main{
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  width: 450px;
+}
+
+table {
+  font-family: CMU;
+  font-size: 14px;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 20px;
+  box-shadow: 0 0 0 10px $a_c;
+  color: #452F21;
+  max-height: 70%;
+}
+th {
+  padding: 10px 8px;
+  background: white;
+}
+table th:first-child {
+  border-top-left-radius: 20px;
+}
+table th:last-child {
+  border-top-right-radius: 20px;
+}
+td {
+  border-top: 10px solid #F2906B;
+  padding: 8px;
+  background: white;
+}
+table td:first-child {
+  border-bottom-left-radius: 20px;
+}
+table td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+#buttons{
+  position: absolute;
+  bottom: 7%;
+  left: 20%;
+  button{
+    background: -webkit-gradient(linear, 0 0, 0 100%, from($need), to($need1));
+    padding: 5px 10px;
+    color: $main_c;
+    border-radius: 5px;
+    border: 1px solid $help_c;
+    font-family: CMU;
+    font-size: 16pt;
+  }
+}
